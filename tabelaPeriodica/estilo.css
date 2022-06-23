@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=PT+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=PT+Sans&display=swap');
 
 * {
     margin: 0;
@@ -27,7 +27,7 @@
 }
 
 body {
-    color: #ffffff;
+	color: #ffffff;
     text-align: center;
     font-size: .65em; 
     padding: 1em 5%;  	
@@ -75,7 +75,7 @@ section {
 	justify-content: center;
 }
 
-section a {
+#grid-container a {
 	text-decoration:none;
 	color: #ffffff;
 }
@@ -126,18 +126,13 @@ table {
 	position: relative;
 }
 
-table tbody a {
-	text-decoration:none;
-	color: #ffffff;
-}
-
 table caption {
 	min-height: max-content;
 	color: #ffffff;
 	text-shadow: 2px 2px 4px #000000;
 	top: 10em;
-	bottom: 10em;
-	font-size: calc(1.5vw + 0.75em);
+	bottom: 20em;
+	font-size: calc(2vw + 0.75em);
 	margin: 1em auto 1em auto;
 }
 
@@ -147,6 +142,11 @@ table thead tr {
 	border-bottom: 2px solid #ffffff;
 	background-image: linear-gradient(to right, #70cbeb, 
 	#dcadd6,#a2d345,#3d9ee3, #f1b200, #eb8e8e,#4db6ac);
+}
+
+table tbody tr td a {
+	text-decoration:none;
+	color: #ffffff;
 }
 
 table tbody tr td {
@@ -177,6 +177,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media*/
 
         .col-span18 {
             grid-column: span 18;
+			height: 10px;
         }
 			
 		.col-span16 {
@@ -231,7 +232,6 @@ https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media*/
 			width: 100%;
 			border-collapse: collapse;
 			border: 1px solid white;
-			text-align: left;
 			box-shadow: var(--sombreado);
 		}
 		
